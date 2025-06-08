@@ -362,7 +362,7 @@
                                                 style="z-index:1;">
                                                 <div style="background-color: rgba(255, 255, 255, 0.45); border-radius: 10px; padding:15px; margin: -20px;"
      class="animate__animated animate__zoomIn animate__slower">
-                                                    
+
 
 
                                                     <div class="text-center">
@@ -1035,7 +1035,7 @@
                                                         <div class="d-flex">
                                                             <div class="mx-auto">
 
-                                                                <div class="d-flex align-items-center mb-5">
+                                                                <div class="d-flex align-items-center mb-5 animate__animated animate__zoomIn animate__slow">
 
 
                                                                     <div style="width:80px;overflow:hidden;"
@@ -1052,7 +1052,7 @@
                                                                             KELVIN</div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="d-flex align-items-center">
+                                                                <div class="d-flex align-items-center animate__animated animate__zoomIn animate__slow">
                                                                     <div style="width:80px;overflow:hidden;"
                                                                         class="image-editable">
                                                                         <img src="{{ asset('assets/img/logo-bca-biru-1687975058.png') }}"
