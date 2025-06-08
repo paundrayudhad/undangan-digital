@@ -256,8 +256,8 @@
                                         </div>
                                     </li>
                                     <li class="satumomen_slide">
-                                        <div class="container-mobile"
-                                            style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp);">
+                                        <div class="container-mobile "
+                                            style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp); ;">
 
                                             <div class="ornament-wrapper">
                                                 <div class="flowers-1"
@@ -316,7 +316,7 @@
                                                     </div>
                                                     <div class="image-editable mb-2 mx-auto w-100 h-auto animate__animated animate__zoomIn animate__slower"
                                                         style="margin-top:-35px;"><img
-                                                            src="{{ asset('assets/images/galleries/369331-gallery-acPUt5fgBA.png') }}"
+                                                            src="assets/images/galleries/369331-gallery-acPUt5fgBA.png"
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain;" /></div>
                                                 </div>
