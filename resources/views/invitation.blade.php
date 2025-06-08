@@ -1308,43 +1308,71 @@
                         <p class="editable" style="font-size:14.4px;">Mohon isi formulir di bawah ini untuk mengonfirmasi kehadiran Anda.</p>
                     </div>
 
-                    <form id="form-rsvp" class="rsvp-form" autocomplete="off">
-                        <div class="form-group mb-3">
-                            <label for="name" class="form-label">Nama Anda</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Tuliskan nama lengkap Anda" value="{{ $guest->display_name }}" readonly>
+                    @if(session('success'))
+                <div class="alert alert-success">{{ session('success') }}</div>
+            @elseif($hasRsvpd)
+                <div class="alert alert-info">Anda sudah melakukan konfirmasi. Terima kasih.</div>
+            @else
+                <form id="form-rsvp" class="rsvp-form" method="POST" action="{{ route('rsvp.store') }}">
+                    @csrf
+                    <input type="hidden" name="guest_id" value="{{ $guest->id }}">
+                    
+                    <div class="form-group mb-3">
+                        <label for="name" class="form-label">Nama Anda</label>
+                        <input type="text" class="form-control" id="name" name="name" value="{{ $guest->display_name }}" readonly>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Kehadiran?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="attendance" id="hadir_ya" value="Hadir" checked>
+                            <label class="form-check-label" for="hadir_ya">Hadir</label>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="relation" class="form-label">Relasi</label>
-                            <input type="text" class="form-control" id="relation" name="relation" placeholder="Contoh: Keluarga Mempelai Pria, Teman Kerja">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="attendance" id="hadir_tidak" value="Tidak Hadir">
+                            <label class="form-check-label" for="hadir_tidak">Tidak Hadir</label>
                         </div>
-                        <div class="form-group mb-3">
-                            <label class="form-label">Kehadiran?</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="hadir" id="hadir_ya" value="Hadir" checked>
-                                <label class="form-check-label" for="hadir_ya">
-                                    Hadir
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="hadir" id="hadir_tidak" value="Tidak Hadir">
-                                <label class="form-check-label" for="hadir_tidak">
-                                    Tidak Hadir
-                                </label>
-                            </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="guest_count" class="form-label">Jumlah yang Akan Hadir</label>
+                        <input type="number" class="form-control" id="guest_count" name="guest_count" value="1" min="1" max="10">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="message" class="form-label">Kirim Ucapan & Doa</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tuliskan ucapan dan doa terbaik Anda..."></textarea>
+                    </div>
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="jumlah" class="form-label">Jumlah yang Akan Hadir</label>
-                            <input type="number" class="form-control" id="jumlah" name="jumlah" value="1" min="0" max="10">
-                        </div>
-                        <div class="form-group mb-4">
-                            <label for="ucapan" class="form-label">Kirim Ucapan & Doa</label>
-                            <textarea class="form-control" id="ucapan" name="ucapan" rows="4" placeholder="Tuliskan ucapan dan doa terbaik Anda untuk kedua mempelai"></textarea>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim Konfirmasi</button>
-                        </div>
-                    </form>
-                    <div id="rsvp-display" class="mt-4"></div>
+                    @endif
+
+                    <div class="d-grid">
+                        <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim Konfirmasi</button>
+                    </div>
+                </form>
+            @endif
+                    <div id="rsvp-list" class="mt-5">
+        @foreach($rsvps as $rsvp)
+            <div class="card-body border-bottom">
+                <p class="fs-6 mb-0 text-dark">{{ $rsvp->guest->display_name }}</p>
+                @if($rsvp->attendance == 'Hadir')
+                    <span class="badge rounded-pill text-bg-success"><i class="bi bi-check-circle-fill"></i> Hadir</span>
+                @else
+                    <span class="badge rounded-pill text-bg-danger"><i class="bi bi-x-circle-fill"></i> Tidak Hadir</span>
+                @endif
+                <p class="fs-6 fst-italic mt-2">"{{ $rsvp->message }}"</p>
+            </div>
+        @endforeach
+    </div>
+
 
                     <button onclick="if (!window.__cfRLUnblockHandlers) return false; closeModal(rsvpModal)"
                         type="button" class="btn btn-close" data-cf-modified-1b1c99168cd35df5525a85b3-=""><svg
@@ -1474,35 +1502,11 @@
     }
 
     // Event listener untuk form submission
-    document.getElementById('form-rsvp').addEventListener('submit', async function(e) {
-        e.preventDefault();
-
-        const formData = {
-            name: document.getElementById('name').value,
-            relation: document.getElementById('relation').value,
-            hadir: document.querySelector('input[name="hadir"]:checked').value,
-            jumlah: parseInt(document.getElementById('jumlah').value, 10),
-            ucapan: document.getElementById('ucapan').value,
-            timestamp: firebase.database.ServerValue.TIMESTAMP // Timestamp untuk RTDB
-        };
-
-        const submitButton = document.getElementById('btn-rsvp');
-        submitButton.disabled = true;
-        submitButton.innerText = 'Mengirim...';
-
-        try {
-            await rsvpRef.push(formData);
-            Vue.prototype.$noty.success('Konfirmasi Anda berhasil dikirim!');
-            document.getElementById('form-rsvp').reset();
-            // Tidak perlu memanggil showRSVP() lagi, karena `on('value')` akan otomatis berjalan
-        } catch (error) {
-            console.error('Error menyimpan ke Realtime Database:', error);
-            Vue.prototype.$noty.error('Gagal menyimpan konfirmasi. Silakan coba lagi.');
-        } finally {
-            submitButton.disabled = false;
-            submitButton.innerText = 'Kirim Konfirmasi';
-        }
-    });
+    document.getElementById('form-rsvp').addEventListener('submit', function() {
+            var submitButton = document.getElementById('btn-rsvp');
+            submitButton.disabled = true;
+            submitButton.innerText = 'Mengirim...';
+        });
 
     // Panggil showRSVP() saat halaman pertama kali dimuat
     document.addEventListener('DOMContentLoaded', showRSVP);
