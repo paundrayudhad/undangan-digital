@@ -190,7 +190,7 @@
         <div id="loader" class="loader-wrapper"><span class="loader"><span class="loader-inner"></span></span></div>
         <audio id="music" loop autoplay>
             <source
-                src="https://assets/musics/kingdom-hearts-dearly-beloved-original-version-jk4p10nsq4c.mp3">
+                src="https://assets.satumomen.com/musics/kingdom-hearts-dearly-beloved-original-version-jk4p10nsq4c.mp3">
         </audio>
         <div id="workspace-container" class="position-fixed h-100 w-100" style="overflow: hidden">
             <div id="panZoom" class="position-fixed h-100 w-100"
@@ -630,7 +630,7 @@
                                                 </div>
                                                 <div class="col-6 p-0 mt-auto">
                                                     <div class="animate__animated animate__slideInRight animate__slow">
-                                                        <img src="{{ asset('storage/' . $photo->groom_photo) }}"
+                                                        <img src="{{ asset('storage/' . $photo->bride_photo) }}"
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain;" />
                                                     </div>
@@ -1121,7 +1121,7 @@
                                     </li>
                                     <li class="satumomen_slide">
                                         <div class="container-mobile "
-                                            style="background-image: url(assets/images/invitation/bg-section-42207681725942580.jpg); background-size: cover;">
+                                            style="background-image: url({{ asset('assets/images/invitation/bg-section-42207681725942580.jpg') }}); background-size: cover;">
 
                                             <div
                                                 class="watermark h-100 w-100 d-flex flex-column align-items-center justify-content-center">
@@ -1296,20 +1296,14 @@
 
                     <div class="form-group mb-3">
                         <label class="form-label">Kehadiran?</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="attendance" id="hadir_ya" value="Hadir" checked>
-                            <label class="form-check-label" for="hadir_ya">Hadir</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="attendance" id="hadir_tidak" value="Tidak Hadir">
-                            <label class="form-check-label" for="hadir_tidak">Tidak Hadir</label>
-                        </div>
+                        <select class="form-select" id="attendance" name="attendance" required>
+                            <option value="" disabled selected>Pilih Kehadiran</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
                     </div>
 
-                    <div class="form-group mb-3">
-                        <label for="guest_count" class="form-label">Jumlah yang Akan Hadir</label>
-                        <input type="number" class="form-control" id="guest_count" name="guest_count" value="1" min="1" max="10">
-                    </div>
+                        <input type="number" class="form-control" id="guest_count" name="guest_count" value="1" min="1" max="10" hidd>
+
 
                     <div class="form-group mb-4">
                         <label for="message" class="form-label">Kirim Ucapan & Doa</label>
@@ -1327,7 +1321,7 @@
                     @endif
 
                     <div class="d-grid">
-                        <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim Konfirmasi</button>
+                        <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim</button>
                     </div>
                 </form>
             @endif
