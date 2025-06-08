@@ -293,8 +293,7 @@
                                                         <div class="editable" style="font-size:14.4px;">The wedding of
                                                         </div>
                                                         <div class="editable quotes font-weight-bold"
-                                                            style="font-size:32px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}<</div>
-
+                                                            style="font-size:32px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}</div>
                                                     </div>
                                                     <div class="mx-auto mb-2 image-editable animate__animated animate__zoomIn animate__slower"
                                                         style="width:80%;">
@@ -518,7 +517,7 @@
                                                             Grace of God,<br />we are delighted to invite you to
                                                             the<br />Wedding of</div>
                                                         <div class="editable font-weight-bold font-accent"
-                                                            style="font-size:48px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}<</div>
+                                                            style="font-size:48px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}</div>
                                                     </div>
                                                     <div class="mt-2 mx-auto mw-100 animate__animated animate__zoomIn animate__slower"
                                                         style="width:150px;height:150px;"><img
@@ -623,10 +622,10 @@
                                                         style="font-size:14px;">THE BRIDE</div>
                                                     <div class="animate__animated animate__slideInLeft animate__slower">
                                                         <div class="editable font-weight-bold font-accent"
-                                                            style="font-size:50px;line-height:1;">{{ $settings->bride_name_short }}<</div>
+                                                            style="font-size:50px;line-height:1;">{{ $settings->bride_name_short }}</div>
 
                                                         <div class="editable font-weight-bold" style="font-size:20px;">
-                                                            {{ $settings->bride_name_full }}<</div>
+                                                            {{ $settings->bride_name_full }}</div>
                                                         <div class="editable font-italic"
                                                             style="font-size:16px;line-height:1;">The daughter
                                                             of<br />The late {{ $settings->bride_father }}<br />&amp; {{ $settings->bride_mother }}</div>
