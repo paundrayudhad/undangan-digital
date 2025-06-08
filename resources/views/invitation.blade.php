@@ -256,8 +256,8 @@
                                         </div>
                                     </li>
                                     <li class="satumomen_slide">
-                                        <div class="container-mobile "
-                                            style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp); ;">
+                                        <div class="container-mobile"
+                                            style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp);">
 
                                             <div class="ornament-wrapper">
                                                 <div class="flowers-1"
@@ -293,7 +293,7 @@
                                                         <div class="editable" style="font-size:14.4px;">The wedding of
                                                         </div>
                                                         <div class="editable quotes font-weight-bold"
-                                                            style="font-size:32px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}<</div>
+                                                            style="font-size:32px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}</div>
 
                                                     </div>
                                                     <div class="mx-auto mb-2 image-editable animate__animated animate__zoomIn animate__slower"
@@ -1311,7 +1311,7 @@
                 <form id="form-rsvp" class="rsvp-form" method="POST" action="{{ route('rsvp.store') }}">
                     @csrf
                     <input type="hidden" name="guest_id" value="{{ $guest->id }}">
-                    
+
                     <div class="form-group mb-3">
                         <label for="name" class="form-label">Nama Anda</label>
                         <input type="text" class="form-control" id="name" name="name" value="{{ $guest->display_name }}" readonly>
