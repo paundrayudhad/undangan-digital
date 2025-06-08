@@ -687,7 +687,7 @@
                                                         style="width:100%;overflow:hidden;">
                                                         <div class="light"
                                                             style="overflow:hidden;width:100%;height:280px;"><img
-                                                                src="{{ asset('storage/' . $photo->gallery_potrait_1) }}"
+                                                                src="{{ asset('storage/' . $photo->gallery_potrait_2) }}"
                                                                 class="lightbox"
                                                                 style="width: 100%; height: 100%; object-fit: cover;"
                                                                 alt="no-image.jpg" /></div>
