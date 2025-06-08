@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Guest;
 use App\Models\Rsvp;
 use Illuminate\Http\Request;
+use App\Models\WeddingSetting; // <-- Tambahkan ini
 
 class InvitationController extends Controller
 {
@@ -14,11 +15,13 @@ class InvitationController extends Controller
 
         // Ambil semua data rsvp untuk ditampilkan
         $rsvps = Rsvp::with('guest')->latest()->get();
+        $settings = WeddingSetting::firstOrFail(); // <-- Tambahkan ini
 
         return view('invitation', [
             'guest' => $guest,
             'hasRsvpd' => $hasRsvpd,
             'rsvps' => $rsvps,
+            'settings' => $settings, // <-- Tambahkan ini
         ]);
     }
 

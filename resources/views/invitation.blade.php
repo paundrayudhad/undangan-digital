@@ -293,7 +293,7 @@
                                                         <div class="editable" style="font-size:14.4px;">The wedding of
                                                         </div>
                                                         <div class="editable quotes font-weight-bold"
-                                                            style="font-size:32px;">POLI &amp; ULLY</div>
+                                                            style="font-size:32px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}<</div>
 
                                                     </div>
                                                     <div class="mx-auto mb-2 image-editable animate__animated animate__zoomIn animate__slower"
@@ -518,7 +518,7 @@
                                                             Grace of God,<br />we are delighted to invite you to
                                                             the<br />Wedding of</div>
                                                         <div class="editable font-weight-bold font-accent"
-                                                            style="font-size:48px;">Poli &amp; Ully</div>
+                                                            style="font-size:48px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}<</div>
                                                     </div>
                                                     <div class="mt-2 mx-auto mw-100 animate__animated animate__zoomIn animate__slower"
                                                         style="width:150px;height:150px;"><img
@@ -575,15 +575,12 @@
                                                     <div
                                                         class="animate__animated animate__slideInRight animate__slower">
                                                         <div class="editable font-weight-bold font-accent"
-                                                            style="font-size:50px;line-height:1;">POLITICA LINEG</div>
+                                                            style="font-size:50px;line-height:1;">{{ $settings->groom_name_short }}</div>
 
                                                         <div class="editable font-weight-bold" style="font-size:20px;">
-                                                            LILI ZHENG</div>
-                                                        <div class="editable font-weight-bold" style="font-size:40px;">
-                                                            李立正</div>
+                                                            {{ $settings->groom_name_full }}</div>
                                                         <div class="editable font-italic"
-                                                            style="font-size:16px;line-height:1;">The son of<br />Mr.
-                                                            Lido Negara<br />Mrs. Vera Salim</div>
+                                                            style="font-size:16px;line-height:1;">The son of<br />{{ $settings->groom_father }}<br />{{ $settings->groom_mother }}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -626,15 +623,13 @@
                                                         style="font-size:14px;">THE BRIDE</div>
                                                     <div class="animate__animated animate__slideInLeft animate__slower">
                                                         <div class="editable font-weight-bold font-accent"
-                                                            style="font-size:50px;line-height:1;">ULLY</div>
+                                                            style="font-size:50px;line-height:1;">{{ $settings->bride_name_short }}<</div>
 
                                                         <div class="editable font-weight-bold" style="font-size:20px;">
-                                                            LIM MEI HUA</div>
-                                                        <div class="editable font-weight-bold" style="font-size:40px;">
-                                                            林美花</div>
+                                                            {{ $settings->bride_name_full }}<</div>
                                                         <div class="editable font-italic"
                                                             style="font-size:16px;line-height:1;">The daughter
-                                                            of<br />The late Mr. Suyanto<br />&amp; Mrs. Miskia</div>
+                                                            of<br />The late {{ $settings->bride_father }}<br />&amp; {{ $settings->bride_mother }}</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-6 p-0 mt-auto">
@@ -884,7 +879,7 @@
                                                                 24</div>
                                                         </div>
                                                         <div class="editable font-weight-bold" style="font-size:16px;">
-                                                            SATURDAY FROM 5PM-7PM</div>
+                                                            <p class="text-white">{{ \Carbon\Carbon::parse($settings->reception_datetime)->translatedFormat('l, d F Y') }}</p></div>
 
                                                     </div>
                                                     <div class="text-center">
@@ -893,14 +888,14 @@
                                                         <div class="editable animate__animated animate__fadeInUp animate__slower"
                                                             style="font-size:24px;text-decoration:underline;animation-delay:1000ms;">
                                                             Venue :</div>
-                                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.063993456382!2d110.40899631535497!3d-7.00171649494291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b74bdd0a373%3A0xfb4f3a537fbbde6c!2sSimpang%20Lima%20Semarang!5e0!3m2!1sen!2sid!4v1654681699999!5m2!1sen!2sid" width="100%" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                                <iframe src="{{ $settings->ceremony_map_url }}" width="100%" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                                                         <div class="color-accent editable font-weight-bold animate__animated animate__fadeInUp animate__slower font-accent"
                                                             style="font-size:32px;line-height:1.2;animation-delay:1500ms;">
-                                                            Grand Hotel Nagoya Garden</div>
+                                                            {{ $settings->ceremony_venue }}</div>
                                                         <div class="editable animate__animated animate__fadeInUp animate__slower"
                                                             style="font-size:18px;animation-delay:2000ms;">Jalan Teuku
-                                                            Umar,<br />Bukit Nagoya, Batam – Indonesia</div>
+                                                            Umar,<br />{{ $settings->ceremony_address }}</div>
                                                     </div>
                                                 </div>
                                             </div>
