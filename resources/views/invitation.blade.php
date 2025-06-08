@@ -1089,7 +1089,7 @@
                                     </li>
                                     <li class="satumomen_slide">
                                         <div class="container-mobile "
-                                            style="background-image: url('{{ asset('assets/images/invitation/bg-section-42207681725942580.jpg') }}'); background-size: cover;">
+                                            style="background-image: url(assets/images/invitation/bg-section-42207681725942580.jpg); background-size: cover;">
 
                                             <div
                                                 class="watermark h-100 w-100 d-flex flex-column align-items-center justify-content-center">
