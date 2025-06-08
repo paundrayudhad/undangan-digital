@@ -35,7 +35,7 @@ class InvitationController extends Controller
             'guest_id' => 'required|exists:guests,id|unique:rsvps,guest_id',
             'relation' => 'nullable|string|max:100',
             'attendance' => 'required|in:Hadir,Tidak Hadir',
-            'guest_count' => 'required_if:attendance,Hadir|integer|min:1|max:10',
+            'guest_count' => 'nullable|integer|min:0',
             'message' => 'required|string|max:500',
         ], [
             'guest_id.unique' => 'Anda sudah pernah mengirimkan konfirmasi kehadiran.',
