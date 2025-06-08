@@ -575,6 +575,8 @@
 
                                                         <div class="editable font-weight-bold" style="font-size:20px;">
                                                             {{ $settings->groom_name_full }}</div>
+                                                        <div class="editable font-weight-bold" style="font-size:40px;">
+                                                            林美花</div>
                                                         <div class="editable font-italic"
                                                             style="font-size:16px;line-height:1;">The son of<br />{{ $settings->groom_father }}<br />{{ $settings->groom_mother }}</div>
                                                     </div>
@@ -623,6 +625,8 @@
 
                                                         <div class="editable font-weight-bold" style="font-size:20px;">
                                                             {{ $settings->bride_name_full }}</div>
+                                                        <div class="editable font-weight-bold" style="font-size:40px;">
+                                                            林美花</div>
                                                         <div class="editable font-italic"
                                                             style="font-size:16px;line-height:1;">The daughter
                                                             of<br />The late {{ $settings->bride_father }}<br />&amp; {{ $settings->bride_mother }}</div>
@@ -933,69 +937,6 @@
                                                 </div>
                                             </div>
 
-                                            <div class="position-relative h-100 d-flex flex-column justify-content-center align-items-center"
-                                                style="z-index:1;">
-                                                <div style="background-image:url(assets/images/galleries/369331-gallery-zmTMoXYPs6.png);background-size:100% 100%;background-position:center;transform:translateX(-19px);padding-left:38px;margin:-20px;"
-                                                    class="animate__animated animate__zoomIn animate__slower">
-
-
-                                                    <div class="py-5 px-4 text-center">
-                                                        <div class="editable mb-3 animate__animated animate__fadeIn animate__slower"
-                                                            style="font-size:24px;line-height:1.1;animation-delay:1000ms;">
-                                                            To enjoy an evening fine dining, we respectfully ask that
-                                                            you be on time.</div>
-                                                        <div class="editable animate__animated animate__fadeIn animate__slower"
-                                                            style="font-size:14.4px;animation-delay:1500ms;">The
-                                                            dresscode for the event is</div>
-                                                        <div class="editable animate__animated animate__fadeIn animate__slower font-weight-bold"
-                                                            style="font-size:14.4px;animation-delay:2000ms;">formal
-                                                            attire / evening dress<br />with no dark color.</div>
-                                                        <div class="editable mt-2 mb-5 animate__animated animate__fadeIn animate__slower"
-                                                            style="font-size:14.4px;animation-delay:2500ms;">We have no
-                                                            doubt that the heavenly charm of your presence will
-                                                            intensify the joy of the celebration</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="satumomen_slide">
-                                        <div class="container-mobile "
-                                            style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp); ;">
-
-                                            <div class="ornament-wrapper">
-                                                <div class="flowers-1"
-                                                    style="position:absolute;right:0;top:0;width:100%;transform:translate(34%, -22%);">
-                                                    <div
-                                                        class="animate__animated animate__fadeInTopRight animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-1.webp"
-                                                            alt="flowers-1.webp" class="w-100" style="opacity: 0.3;" />
-                                                    </div>
-                                                </div>
-                                                <div class="flowers-2"
-                                                    style="position:absolute;left:0;bottom:0;width:90%;transform:translate(-17%, 17%);">
-                                                    <div
-                                                        class="animate__animated animate__fadeInBottomLeft animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-2.webp"
-                                                            alt="flowers-1.webp" class="w-100" style="opacity: 0.3;" />
-                                                    </div>
-                                                </div>
-                                                <div class="flowers-3"
-                                                    style="position:absolute;left:0;top:0;width:35%;transform:translate(-40%, 48%);">
-                                                    <div class="animate__animated animate__fadeInLeft animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-3.webp"
-                                                            alt="flowers-3.webp" class="w-100" />
-                                                    </div>
-                                                </div>
-                                                <div class="flowers-4"
-                                                    style="position:absolute;right:0;bottom:0;width:35%;transform:translate(66%, -15%);">
-                                                    <div class="animate__animated animate__fadeInRight animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-4.webp"
-                                                            alt="flowers-4.webp" class="w-100" />
-                                                    </div>
-                                                </div>
-                                            </div>
-
 
                                             <div
                                                 class="position-relative h-100 d-flex flex-column justify-content-center align-items-center">
@@ -1007,9 +948,36 @@
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain; " /></div>
 
+                                                    <div class="text-center color-accent h4 mb-4 editable animate__animated animate__fadeInDown animate__slow font-weight-bold"
+                                                        style="font-size:32px;">Count Down</div>
+
+                                                    <div class="countdown-wrapper mx-auto mb-4 d-flex flex-column animate__animated animate__fadeInUp animate__slower"
+                                                        data-datetime="2025-06-15T13:00"
+                                                        style="max-width:280px;min-width:280px;">
+                                                        <div class="countdown text-center">
+                                                            <div class="countdown-item day bg-white"
+                                                                style="color:var(--inv-accent);border:1px solid var(--inv-accent);">
+                                                                <div class="number">00</div>
+                                                                <div class="text editable">Hari</div>
+                                                            </div>
+                                                            <div class="countdown-item hour bg-white"
+                                                                style="color:var(--inv-accent);border:1px solid var(--inv-accent);">
+                                                                <div class="number">00</div>
+                                                                <div class="text editable">Jam</div>
+                                                            </div>
+                                                            <div class="countdown-item minute bg-white"
+                                                                style="color:var(--inv-accent);border:1px solid var(--inv-accent);">
+                                                                <div class="number">00</div>
+                                                                <div class="text editable">Menit</div>
+                                                            </div>
+                                                            <div class="countdown-item second bg-white"
+                                                                style="color:var(--inv-accent);border:1px solid var(--inv-accent);">
+                                                                <div class="number">00</div>
+                                                                <div class="text editable">Detik</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div>
-
-
                                                         <div class="text-center">
                                                             <div class="editable mb-4 animate__animated animate__fadeInUp animate__slower"
                                                                 style="font-size:14.4px;">Send greetings to the bride
@@ -1017,7 +985,7 @@
 
                                                             <button
                                                                 class="btn-rsvp btn btn-primary mx-auto mb-4 animate__animated animate__fadeInUp animate__slow rounded-pill"
-                                                                style="font-size:24px;">Kirim Ucapan RSVP</button>
+                                                                style="font-size:20px;">Kirim Ucapan RSVP</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1187,10 +1155,6 @@
                                 <li class="satumomen_menu_item">
                                     <i class="icon ph-fill ph-calendar-check" style="color:currentColor;"></i>
                                     <span>Event</span>
-                                </li>
-                                <li class="satumomen_menu_item">
-                                    <i class="icon ph-fill ph-dress" style="color:currentColor;"></i>
-                                    <span>Dresscode</span>
                                 </li>
                                 <li class="satumomen_menu_item">
                                     <i class="icon ph-fill ph-chat-circle-text" style="color:currentColor;"></i>
