@@ -884,14 +884,13 @@
                                                         <div class="editable animate__animated animate__fadeInUp animate__slower"
                                                             style="font-size:24px;text-decoration:underline;animation-delay:1000ms;">
                                                             Venue :</div>
-                                                                <iframe src="{{ $settings->ceremony_map_url }}" width="100%" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
                                                         <div class="color-accent editable font-weight-bold animate__animated animate__fadeInUp animate__slower font-accent"
                                                             style="font-size:32px;line-height:1.2;animation-delay:1500ms;">
                                                             {{ $settings->ceremony_venue }}</div>
                                                         <div class="editable animate__animated animate__fadeInUp animate__slower"
                                                             style="font-size:18px;animation-delay:2000ms;">Jalan Teuku
                                                             Umar,<br />{{ $settings->ceremony_address }}</div>
+                                                         <iframe src="{{ $settings->ceremony_map_url }}" width="100%" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1076,26 +1075,44 @@
                                                         <div class="d-flex">
                                                             <div class="mx-auto">
 
-                                                                @if($settings->gift_banks)
-        @foreach($settings->gift_banks as $bank)
-            <div class="bank-item">
-                <p><strong>{{ $bank['bank_name'] }}</strong></p>
-                <p>{{ $bank['account_number'] }}</p>
-                <p>a/n {{ $bank['account_name'] }}</p>
-            </div>
-        @endforeach
-    @endif
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="gift-container mt-3 p-4 rounded animate__animated animate__zoomIn animate__slow">
-                                                        <div class="text-center mb-2">
-                                                            <div class="editable font-weight-bold h5 color-accent mb-2">
-                                                                Kirim Kado</div>
-                                                            <div class="editable mb-0" style="font-size:14.4px;">Anda
-                                                                dapat mengirim kado
-                                                                ke:<br /><b>Dsn. Baba'an Rt. 05 / Rw. 02, Ds. Tugurejo
-                                                                    Kec.Ngasem Kab. Kediri</b></div>
+                                                                <div class="d-flex align-items-center mb-3">
+
+
+                                                                    <div style="width:80px;overflow:hidden;"
+                                                                        class="image-editable">
+                                                                        <img src="{{ asset('assets/img/logo-bri.png') }}"
+                                                                            style="width: 100%;height: 100%;object-fit: contain;"
+                                                                            alt="logo-bca-biru-1687975058.png" />
+                                                                    </div>
+                                                                    <div class="text-left pl-2">
+                                                                        <div class="editable account-number font-weight-bold h5 mb-0"
+                                                                            style="font-size:18px;">320701047366531
+                                                                        </div>
+                                                                        <div class="editable" style="font-size:14.4px;">
+                                                                            DEVI ASLAMATUL KHOIR</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div style="width:80px;overflow:hidden;"
+                                                                        class="image-editable">
+                                                                        <img src="{{ asset('assets/img/logo-bni.png') }}"
+                                                                            style="width: 100%;height: 100%;object-fit: contain;"
+                                                                            alt="logo-bca-biru-1687975058.png" />
+                                                                    </div>
+                                                                    <div class="text-left pl-2">
+                                                                        <div class="editable account-number font-weight-bold h5 mb-0"
+                                                                            style="font-size:18px;">1819001292
+                                                                        </div>
+                                                                        <div class="editable" style="font-size:14.4px;">
+                                                                            DEVI ASLAMATUL KHOIR</div>
+                                                                    </div>
+
+                                                                    <div class="text-left pl-2">
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
