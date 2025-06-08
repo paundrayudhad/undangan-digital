@@ -421,7 +421,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:180px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-hUyuDCbOPJ.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_kolom_1) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -431,7 +431,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:150px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-Bvqv6jxPBo.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_kolom_2) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -443,7 +443,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:150px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-K3FYeKw59N.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_kolom_3) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -453,7 +453,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:180px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-kmYUgGAqxT.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_kolom_4) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -560,7 +560,7 @@
                                                 style="z-index:1;margin:-30px;width:calc(100% + 60px);height:calc(100% + 60px);bottom:0;">
                                                 <div class="col-6 p-0 mt-auto">
                                                     <div class="animate__animated animate__slideInLeft animate__slow">
-                                                        <img src="{{ asset('assets/images/galleries/369331-gallery-uvG90fPgEV.png') }}"
+                                                        <img src="{{ asset('storage/' . $photo->groom_photo) }}"
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain;" />
                                                     </div>
@@ -630,7 +630,7 @@
                                                 </div>
                                                 <div class="col-6 p-0 mt-auto">
                                                     <div class="animate__animated animate__slideInRight animate__slow">
-                                                        <img src="{{ asset('assets/images/galleries/369331-gallery-20WuL0Rm0j.png') }}"
+                                                        <img src="{{ asset('storage/' . $photo->groom_photo) }}"
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain;" />
                                                     </div>
@@ -682,7 +682,7 @@
                                                         style="width:100%;overflow:hidden;">
                                                         <div class="light"
                                                             style="overflow:hidden;width:100%;height:380px;"><img
-                                                                src="{{ asset('assets/images/galleries/369331-gallery-U6DhmneawB.jpg') }}"
+                                                                src="{{ asset('storage/' . $photo->gallery_potrait_1) }}"
                                                                 class="lightbox"
                                                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                 alt="no-image.jpg" /></div>
@@ -691,7 +691,7 @@
                                                         style="width:100%;overflow:hidden;">
                                                         <div class="light"
                                                             style="overflow:hidden;width:100%;height:280px;"><img
-                                                                src="{{ asset('assets/images/galleries/369331-gallery-fKj1M5mhdi.jpg') }}"
+                                                                src="{{ asset('storage/' . $photo->gallery_potrait_1) }}"
                                                                 class="lightbox"
                                                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                 alt="no-image.jpg" /></div>
@@ -749,7 +749,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:152px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-oenpr1vr46.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_journey_1) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -759,7 +759,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:152px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-CMcFWt3jQN.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_journey_2) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -769,7 +769,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:152px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-LaFvldeZSm.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_journey_3) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -781,7 +781,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:152px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-3VT4m0SToE.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_journey_4) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -791,7 +791,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:152px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-rLFVOqa8ea.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_journey_5) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />
@@ -801,7 +801,7 @@
                                                                 style="width:100%;overflow:hidden;">
                                                                 <div class="light"
                                                                     style="overflow:hidden;width:100%;height:152px;">
-                                                                    <img src="{{ asset('assets/images/galleries/369331-gallery-DJF78fp9mN.jpg') }}"
+                                                                    <img src="{{ asset('storage/' . $photo->gallery_journey_6) }}"
                                                                         class="lightbox"
                                                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
                                                                         alt="no-image.jpg" />

@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
 {
     $this->call(GuestSeeder::class);
     $this->call(WeddingSettingSeeder::class);
+    $this->call(InvitationSeeder::class);
 }
 }
