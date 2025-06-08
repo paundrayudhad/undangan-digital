@@ -647,34 +647,26 @@
                                             style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp); ;">
 
                                             <div class="ornament-wrapper">
-                                                <div class="flowers-1"
-                                                    style="position:absolute;right:0;top:0;width:100%;transform:translate(34%, -22%);">
-                                                    <div
-                                                        class="animate__animated animate__fadeInTopRight animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-1.webp"
-                                                            alt="flowers-1.webp" class="w-100" style="opacity: 0.3;" />
+                                                <div class="flowers-1" style="position:absolute;right:0;top:0;width:100%;transform:translate(34%, -22%);">
+                                                    <div class="animate__animated animate__fadeInTopRight animate__slower">
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-1.webp" alt="flowers-1.webp" class="w-100"
+                                                            style="opacity: 0.3;" />
                                                     </div>
                                                 </div>
-                                                <div class="flowers-2"
-                                                    style="position:absolute;left:0;bottom:0;width:90%;transform:translate(-17%, 17%);">
-                                                    <div
-                                                        class="animate__animated animate__fadeInBottomLeft animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-2.webp"
-                                                            alt="flowers-1.webp" class="w-100" style="opacity: 0.3;" />
+                                                <div class="flowers-2" style="position:absolute;left:0;bottom:0;width:90%;transform:translate(-17%, 17%);">
+                                                    <div class="animate__animated animate__fadeInBottomLeft animate__slower">
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-2.webp" alt="flowers-1.webp" class="w-100"
+                                                            style="opacity: 0.3;" />
                                                     </div>
                                                 </div>
-                                                <div class="flowers-3"
-                                                    style="position:absolute;left:0;top:0;width:35%;transform:translate(-40%, 48%);">
+                                                <div class="flowers-3" style="position:absolute;left:0;top:0;width:35%;transform:translate(-40%, 48%);">
                                                     <div class="animate__animated animate__fadeInLeft animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-3.webp"
-                                                            alt="flowers-3.webp" class="w-100" />
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-3.webp" alt="flowers-3.webp" class="w-100" />
                                                     </div>
                                                 </div>
-                                                <div class="flowers-4"
-                                                    style="position:absolute;right:0;bottom:0;width:35%;transform:translate(66%, -15%);">
+                                                <div class="flowers-4" style="position:absolute;right:0;bottom:0;width:35%;transform:translate(66%, -15%);">
                                                     <div class="animate__animated animate__fadeInRight animate__slower">
-                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-4.webp"
-                                                            alt="flowers-4.webp" class="w-100" />
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-4.webp" class="w-100" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -685,10 +677,10 @@
                                                     <div class="mb-2 image-editable animate__animated animate__zoomIn animate__slower"
                                                         style="width:100%;overflow:hidden;">
                                                         <div class="light"
-                                                            style="overflow:hidden;width:100%;height:380px;"><img
+                                                            style="overflow:hidden;width:100%;height:280px;"><img
                                                                 src="{{ asset('storage/' . $photo->gallery_potrait_1) }}"
                                                                 class="lightbox"
-                                                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
+                                                                style="width: 100%; height: 100%; object-fit: cover;"
                                                                 alt="no-image.jpg" /></div>
                                                     </div>
                                                     <div class="mb-2 image-editable animate__animated animate__zoomIn animate__slower"
@@ -697,7 +689,7 @@
                                                             style="overflow:hidden;width:100%;height:280px;"><img
                                                                 src="{{ asset('storage/' . $photo->gallery_potrait_1) }}"
                                                                 class="lightbox"
-                                                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 10%;"
+                                                                style="width: 100%; height: 100%; object-fit: cover;"
                                                                 alt="no-image.jpg" /></div>
                                                     </div>
                                                 </div>
@@ -1041,7 +1033,7 @@
                                                         <div class="d-flex">
                                                             <div class="mx-auto">
 
-                                                                <div class="d-flex align-items-center mb-3">
+                                                                <div class="d-flex align-items-center mb-5">
 
 
                                                                     <div style="width:80px;overflow:hidden;"
@@ -1276,23 +1268,24 @@
                         </div>
                     @endif
 
-                    <div class="d-grid">
-                        <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim</button>
-                    </div>
+                    <div class="d-flex justify-content-center">
+    <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim</button>
+</div>
+
                 </form>
             @endif
                     <div id="rsvp-list" class="mt-5">
-        @foreach($rsvps as $rsvp)
-            <div class="card-body border-bottom">
-                <p class="fs-6 mb-0 text-dark">{{ $rsvp->guest->display_name }}</p>
-                @if($rsvp->attendance == 'Hadir')
-                    <span class="badge rounded-pill text-bg-success"><i class="bi bi-check-circle-fill"></i> Hadir</span>
-                @else
-                    <span class="badge rounded-pill text-bg-danger"><i class="bi bi-x-circle-fill"></i> Tidak Hadir</span>
-                @endif
-                <p class="fs-6 fst-italic mt-2">"{{ $rsvp->message }}"</p>
-            </div>
-        @endforeach
+            @foreach($rsvps as $rsvp)
+                <div class="card-body border-bottom">
+                    <p class="fs-6 mb-0 text-dark">{{ $rsvp->guest->display_name }}</p>
+                    @if($rsvp->attendance == 'Hadir')
+                        <span class="badge rounded-pill text-bg-success"><i class="bi bi-check-circle-fill"></i> Hadir</span>
+                    @else
+                        <span class="badge rounded-pill text-bg-danger"><i class="bi bi-x-circle-fill"></i> Tidak Hadir</span>
+                    @endif
+                    <p class="fs-6 fst-italic mt-2">"{{ $rsvp->message }}"</p>
+                </div>
+            @endforeach
     </div>
 
 
