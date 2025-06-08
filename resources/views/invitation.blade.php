@@ -360,8 +360,8 @@
 
                                             <div class="position-relative h-100 d-flex flex-column justify-content-center align-items-center"
                                                 style="z-index:1;">
-                                                <div style="background-image:url({{ asset('assets/images/galleries/369331-gallery-zmTMoXYPs6.png') }});background-size:100% 100%;background-position:center;transform:translateX(-19px);padding-left:38px;margin:-20px;"
-                                                    class="animate__animated animate__zoomIn animate__slower">
+                                                <div style="background-color: rgba(255, 255, 255, 0.45); border-radius: 10px; padding:15px; margin: -20px;"
+     class="animate__animated animate__zoomIn animate__slower">
                                                     
 
 
