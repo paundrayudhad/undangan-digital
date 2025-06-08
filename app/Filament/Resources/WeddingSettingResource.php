@@ -50,7 +50,19 @@ class WeddingSettingResource extends Resource
                                     Forms\Components\TextInput::make('reception_map_url')->url()->label('Link Google Maps'),
                                 ]),
                         ]),
+                        Forms\Components\Tabs\Tab::make('Info Hadiah')
+                        ->schema([
+                            Forms\Components\Textarea::make('gift_address')->label('Alamat Kirim Hadiah'),
+                            Forms\Components\Repeater::make('gift_banks')
+                                ->label('Rekening Bank')
+                                ->schema([
+                                    Forms\Components\TextInput::make('bank_name')->required()->label('Nama Bank'),
+                                    Forms\Components\TextInput::make('account_number')->required()->label('Nomor Rekening'),
+                                    Forms\Components\TextInput::make('account_name')->required()->label('Atas Nama'),
+                                ])->columns(3),
+                        ]),
                 ])->columnSpanFull(),
+
             ]);
     }
 
@@ -75,14 +87,14 @@ class WeddingSettingResource extends Resource
                 // ]),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -90,5 +102,5 @@ class WeddingSettingResource extends Resource
             'create' => Pages\CreateWeddingSetting::route('/create'),
             'edit' => Pages\EditWeddingSetting::route('/{record}/edit'),
         ];
-    }    
+    }
 }
