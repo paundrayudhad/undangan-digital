@@ -190,7 +190,7 @@
         <div id="loader" class="loader-wrapper"><span class="loader"><span class="loader-inner"></span></span></div>
         <audio id="music" loop autoplay>
             <source
-                src="https://assets.satumomen.com/musics/kingdom-hearts-dearly-beloved-original-version-jk4p10nsq4c.mp3">
+                src="{{ url('music.mp3') }}">
         </audio>
         <div id="workspace-container" class="position-fixed h-100 w-100" style="overflow: hidden">
             <div id="panZoom" class="position-fixed h-100 w-100"
@@ -1080,6 +1080,7 @@
 
                                                                     </div>
                                                                 </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1264,9 +1265,10 @@
                             <option value="" disabled selected>Pilih Kehadiran</option>
                             <option value="Hadir">Hadir</option>
                             <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
                     </div>
 
-                        <input type="number" class="form-control" id="guest_count" name="guest_count" value="1" min="1" max="10" hidd>
+                        <input type="number" class="form-control" id="guest_count" name="guest_count" value="1" min="1" max="10" hidden>
 
 
                     <div class="form-group mb-4">
