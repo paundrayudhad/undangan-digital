@@ -575,8 +575,6 @@
 
                                                         <div class="editable font-weight-bold" style="font-size:20px;">
                                                             {{ $settings->groom_name_full }}</div>
-                                                        <div class="editable font-weight-bold" style="font-size:40px;">
-                                                            林美花</div>
                                                         <div class="editable font-italic"
                                                             style="font-size:16px;line-height:1;">The son of<br />{{ $settings->groom_father }}<br />{{ $settings->groom_mother }}</div>
                                                     </div>
@@ -625,8 +623,6 @@
 
                                                         <div class="editable font-weight-bold" style="font-size:20px;">
                                                             {{ $settings->bride_name_full }}</div>
-                                                        <div class="editable font-weight-bold" style="font-size:40px;">
-                                                            林美花</div>
                                                         <div class="editable font-italic"
                                                             style="font-size:16px;line-height:1;">The daughter
                                                             of<br />The late {{ $settings->bride_father }}<br />&amp; {{ $settings->bride_mother }}</div>
@@ -634,7 +630,7 @@
                                                 </div>
                                                 <div class="col-6 p-0 mt-auto">
                                                     <div class="animate__animated animate__slideInRight animate__slow">
-                                                        <img src="{{ asset('storage/' . $photo->bride_photo) }}"
+                                                        <img src="{{ asset('storage/' . $photo->groom_photo) }}"
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain;" />
                                                     </div>
@@ -883,16 +879,81 @@
 
                                                     </div>
                                                     <div class="text-center">
-                                                        <div class="editable animate__animated animate__fadeInUp animate__slower" style="font-size:24px;text-decoration:underline;animation-delay:1000ms;">
-                                                            Venue :
-                                                        </div>
-                                                        <div class="color-accent editable font-weight-bold animate__animated animate__fadeInUp animate__slower font-accent" style="font-size:32px;line-height:1.2;animation-delay:1500ms;">
-                                                            {{ $settings->ceremony_venue }}
-                                                        </div>
-                                                        <div class="editable animate__animated animate__fadeInUp animate__slower" style="font-size:18px;animation-delay:2000ms;">
-                                                            {{ $settings->ceremony_address }}
-                                                        </div>
-                                                        <iframe src="{{ $settings->ceremony_map_url }}" width="100%" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+                                                        <div class="editable animate__animated animate__fadeInUp animate__slower"
+                                                            style="font-size:24px;text-decoration:underline;animation-delay:1000ms;">
+                                                            Venue :</div>
+                                                                <iframe src="{{ $settings->ceremony_map_url }}" width="100%" height="80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                        <div class="color-accent editable font-weight-bold animate__animated animate__fadeInUp animate__slower font-accent"
+                                                            style="font-size:32px;line-height:1.2;animation-delay:1500ms;">
+                                                            {{ $settings->ceremony_venue }}</div>
+                                                        <div class="editable animate__animated animate__fadeInUp animate__slower"
+                                                            style="font-size:18px;animation-delay:2000ms;">Jalan Teuku
+                                                            Umar,<br />{{ $settings->ceremony_address }}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="satumomen_slide">
+                                        <div class="container-mobile "
+                                            style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp); ;">
+
+                                            <div class="ornament-wrapper">
+                                                <div class="flowers-1"
+                                                    style="position:absolute;right:0;top:0;width:100%;transform:translate(34%, -22%);">
+                                                    <div
+                                                        class="animate__animated animate__fadeInTopRight animate__slower">
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-1.webp"
+                                                            alt="flowers-1.webp" class="w-100" style="opacity: 0.3;" />
+                                                    </div>
+                                                </div>
+                                                <div class="flowers-2"
+                                                    style="position:absolute;left:0;bottom:0;width:90%;transform:translate(-17%, 17%);">
+                                                    <div
+                                                        class="animate__animated animate__fadeInBottomLeft animate__slower">
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-2.webp"
+                                                            alt="flowers-1.webp" class="w-100" style="opacity: 0.3;" />
+                                                    </div>
+                                                </div>
+                                                <div class="flowers-3"
+                                                    style="position:absolute;left:0;top:0;width:35%;transform:translate(-40%, 48%);">
+                                                    <div class="animate__animated animate__fadeInLeft animate__slower">
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-3.webp"
+                                                            alt="flowers-3.webp" class="w-100" />
+                                                    </div>
+                                                </div>
+                                                <div class="flowers-4"
+                                                    style="position:absolute;right:0;bottom:0;width:35%;transform:translate(66%, -15%);">
+                                                    <div class="animate__animated animate__fadeInRight animate__slower">
+                                                        <img src="https://satumomen.com/themes/forever-journey/flowers-4.webp"
+                                                            alt="flowers-4.webp" class="w-100" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="position-relative h-100 d-flex flex-column justify-content-center align-items-center"
+                                                style="z-index:1;">
+                                                <div style="background-image:url(assets/images/galleries/369331-gallery-zmTMoXYPs6.png);background-size:100% 100%;background-position:center;transform:translateX(-19px);padding-left:38px;margin:-20px;"
+                                                    class="animate__animated animate__zoomIn animate__slower">
+
+
+                                                    <div class="py-5 px-4 text-center">
+                                                        <div class="editable mb-3 animate__animated animate__fadeIn animate__slower"
+                                                            style="font-size:24px;line-height:1.1;animation-delay:1000ms;">
+                                                            To enjoy an evening fine dining, we respectfully ask that
+                                                            you be on time.</div>
+                                                        <div class="editable animate__animated animate__fadeIn animate__slower"
+                                                            style="font-size:14.4px;animation-delay:1500ms;">The
+                                                            dresscode for the event is</div>
+                                                        <div class="editable animate__animated animate__fadeIn animate__slower font-weight-bold"
+                                                            style="font-size:14.4px;animation-delay:2000ms;">formal
+                                                            attire / evening dress<br />with no dark color.</div>
+                                                        <div class="editable mt-2 mb-5 animate__animated animate__fadeIn animate__slower"
+                                                            style="font-size:14.4px;animation-delay:2500ms;">We have no
+                                                            doubt that the heavenly charm of your presence will
+                                                            intensify the joy of the celebration</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -945,7 +1006,6 @@
                                                             src="{{ asset('assets/images/galleries/369331-gallery-0dThaBEMyP.png') }}"
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain; " /></div>
-
                                                     <div class="text-center color-accent h4 mb-4 editable animate__animated animate__fadeInDown animate__slow font-weight-bold"
                                                         style="font-size:32px;">Count Down</div>
 
@@ -976,6 +1036,8 @@
                                                         </div>
                                                     </div>
                                                     <div>
+
+
                                                         <div class="text-center">
                                                             <div class="editable mb-4 animate__animated animate__fadeInUp animate__slower"
                                                                 style="font-size:14.4px;">Send greetings to the bride
@@ -983,7 +1045,7 @@
 
                                                             <button
                                                                 class="btn-rsvp btn btn-primary mx-auto mb-4 animate__animated animate__fadeInUp animate__slow rounded-pill"
-                                                                style="font-size:20px;">Kirim Ucapan RSVP</button>
+                                                                style="font-size:24px;">Kirim Ucapan RSVP</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1041,46 +1103,23 @@
                                                         <div class="d-flex">
                                                             <div class="mx-auto">
 
-                                                                <div class="d-flex align-items-center mb-3">
-
-
-                                                                    <div style="width:80px;overflow:hidden;"
-                                                                        class="image-editable">
-                                                                        <img src="{{ asset('assets/img/logo-bca-biru-1687975058.png') }}"
-                                                                            style="width: 100%;height: 100%;object-fit: contain;"
-                                                                            alt="logo-bca-biru-1687975058.png" />
-                                                                    </div>
-                                                                    <div class="text-left pl-2">
-                                                                        <div class="editable account-number font-weight-bold h5 mb-0"
-                                                                            style="font-size:18px;">8955105865
-                                                                        </div>
-                                                                        <div class="editable" style="font-size:14.4px;">
-                                                                            KELVIN</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <div style="width:80px;overflow:hidden;"
-                                                                        class="image-editable">
-                                                                        <img src="{{ asset('assets/img/logo-bca-biru-1687975058.png') }}"
-                                                                            style="width: 100%;height: 100%;object-fit: contain;"
-                                                                            alt="logo-bca-biru-1687975058.png" />
-                                                                    </div>
-                                                                    <div class="text-left pl-2">
-                                                                        <div class="editable account-number font-weight-bold h5 mb-0"
-                                                                            style="font-size:18px;">5125360294
-                                                                        </div>
-                                                                        <div class="editable" style="font-size:14.4px;">
-                                                                            MELSI</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                                @if($settings->gift_banks)
+        @foreach($settings->gift_banks as $bank)
+            <div class="bank-item">
+                <p><strong>{{ $bank['bank_name'] }}</strong></p>
+                <p>{{ $bank['account_number'] }}</p>
+                <p>a/n {{ $bank['account_name'] }}</p>
+            </div>
+        @endforeach
+    @endif
                                                         </div>
+                                                    </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="satumomen_slide">
                                         <div class="container-mobile "
-                                            style="background-image: url({{ asset('assets/images/invitation/bg-section-42207681725942580.jpg') }}); background-size: cover;">
+                                            style="background-image: url(assets/images/invitation/bg-section-42207681725942580.jpg); background-size: cover;">
 
                                             <div
                                                 class="watermark h-100 w-100 d-flex flex-column align-items-center justify-content-center">
@@ -1146,6 +1185,10 @@
                                 <li class="satumomen_menu_item">
                                     <i class="icon ph-fill ph-calendar-check" style="color:currentColor;"></i>
                                     <span>Event</span>
+                                </li>
+                                <li class="satumomen_menu_item">
+                                    <i class="icon ph-fill ph-dress" style="color:currentColor;"></i>
+                                    <span>Dresscode</span>
                                 </li>
                                 <li class="satumomen_menu_item">
                                     <i class="icon ph-fill ph-chat-circle-text" style="color:currentColor;"></i>
@@ -1251,15 +1294,20 @@
 
                     <div class="form-group mb-3">
                         <label class="form-label">Kehadiran?</label>
-                        <select class="form-select" id="attendance" name="attendance" required>
-                            <option value="" disabled selected>Pilih Kehadiran</option>
-                            <option value="Hadir">Hadir</option>
-                            <option value="Tidak Hadir">Tidak Hadir</option>
-                        </select>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="attendance" id="hadir_ya" value="Hadir" checked>
+                            <label class="form-check-label" for="hadir_ya">Hadir</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="attendance" id="hadir_tidak" value="Tidak Hadir">
+                            <label class="form-check-label" for="hadir_tidak">Tidak Hadir</label>
+                        </div>
                     </div>
 
-                        <input type="number" class="form-control" id="guest_count" name="guest_count" value="1" min="1" max="10" hidden>
-
+                    <div class="form-group mb-3">
+                        <label for="guest_count" class="form-label">Jumlah yang Akan Hadir</label>
+                        <input type="number" class="form-control" id="guest_count" name="guest_count" value="1" min="1" max="10">
+                    </div>
 
                     <div class="form-group mb-4">
                         <label for="message" class="form-label">Kirim Ucapan & Doa</label>
@@ -1277,7 +1325,7 @@
                     @endif
 
                     <div class="d-grid">
-                        <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim</button>
+                        <button type="submit" id="btn-rsvp" class="btn btn-primary rounded-pill">Kirim Konfirmasi</button>
                     </div>
                 </form>
             @endif
