@@ -360,7 +360,9 @@
 
                                             <div class="position-relative h-100 d-flex flex-column justify-content-center align-items-center"
                                                 style="z-index:1;">
-                                                <div>
+                                                <div style="background-image:url({{ asset('assets/images/galleries/369331-gallery-zmTMoXYPs6.png') }});background-size:100% 100%;background-position:center;transform:translateX(-19px);padding-left:38px;margin:-20px;"
+                                                    class="animate__animated animate__zoomIn animate__slower">
+                                                    
 
 
                                                     <div class="text-center">
@@ -680,7 +682,7 @@
                                                             style="overflow:hidden;width:100%;height:280px;"><img
                                                                 src="{{ asset('storage/' . $photo->gallery_potrait_1) }}"
                                                                 class="lightbox"
-                                                                style="width: 100%; height: 100%; object-fit: cover;"
+                                                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 8%;"
                                                                 alt="no-image.jpg" /></div>
                                                     </div>
                                                     <div class="mb-2 image-editable animate__animated animate__zoomIn animate__slower"
@@ -689,7 +691,7 @@
                                                             style="overflow:hidden;width:100%;height:280px;"><img
                                                                 src="{{ asset('storage/' . $photo->gallery_potrait_2) }}"
                                                                 class="lightbox"
-                                                                style="width: 100%; height: 100%; object-fit: cover;"
+                                                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 8%;"
                                                                 alt="no-image.jpg" /></div>
                                                     </div>
                                                 </div>
