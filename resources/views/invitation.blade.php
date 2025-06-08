@@ -295,7 +295,7 @@
                                                     <div class="mx-auto mb-2 image-editable animate__animated animate__zoomIn animate__slower"
                                                         style="width:80%;">
                                                         <div class="light w-100" style="overflow:hidden;height:120px;">
-                                                            <img src="{{ asset('assets/images/galleries/369331-gallery-QFvxGQrWR1.jpg') }}"
+                                                            <img src="{{ asset('storage/' . $photo->gallery_journey_1) }}"
                                                                 class="lightbox"
                                                                 style="width: 100%; height: 100%; object-fit: cover;"
                                                                 alt="no-image.jpg" />
@@ -304,7 +304,7 @@
                                                     <div class="mx-auto mb-2 image-editable animate__animated animate__zoomIn animate__slower"
                                                         style="width:80%;">
                                                         <div class="light w-100" style="overflow:hidden;height:120px;">
-                                                            <img src="{{ asset('assets/images/galleries/369331-gallery-G4r21A4eZZ.jpg') }}"
+                                                            <img src="{{ asset('storage/' . $photo->gallery_journey_2) }}"
                                                                 class="lightbox"
                                                                 style="width: 100%; height: 100%; object-fit: cover;"
                                                                 alt="no-image.jpg" />
@@ -1071,10 +1071,6 @@
                                                         kegembiraan pernikahan kami
                                                         dengan kehadiran dan hadiah indah Anda.</div>
                                                     <div style="display:flex;gap:8px;">
-                                                        <button
-                                                            class="btn-gift btn btn-block btn-primary rounded-pill animate__animated animate__fadeInUp animate__slow"
-                                                            style="max-width:150px;margin:auto;font-size:14.4px;">🎁
-                                                            Cashless</button>
                                                     </div>
                                                     <div
                                                         class="gift-container mt-3 p-4 rounded animate__animated animate__zoomIn animate__slow">
