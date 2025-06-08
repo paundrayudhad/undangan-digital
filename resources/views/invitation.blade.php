@@ -1048,31 +1048,31 @@
 
                                                                     <div style="width:80px;overflow:hidden;"
                                                                         class="image-editable">
-                                                                        <img src="{{ asset('assets/img/logo-bri.png') }}"
+                                                                        <img src="{{ asset('assets/img/logo-bca-biru-1687975058.png') }}"
                                                                             style="width: 100%;height: 100%;object-fit: contain;"
                                                                             alt="logo-bca-biru-1687975058.png" />
                                                                     </div>
                                                                     <div class="text-left pl-2">
                                                                         <div class="editable account-number font-weight-bold h5 mb-0"
-                                                                            style="font-size:18px;">320701047366531
+                                                                            style="font-size:18px;">8955105865
                                                                         </div>
                                                                         <div class="editable" style="font-size:14.4px;">
-                                                                            DEVI ASLAMATUL KHOIR</div>
+                                                                            KELVIN</div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="d-flex align-items-center">
                                                                     <div style="width:80px;overflow:hidden;"
                                                                         class="image-editable">
-                                                                        <img src="{{ asset('assets/img/logo-bni.png') }}"
+                                                                        <img src="{{ asset('assets/img/logo-bca-biru-1687975058.png') }}"
                                                                             style="width: 100%;height: 100%;object-fit: contain;"
                                                                             alt="logo-bca-biru-1687975058.png" />
                                                                     </div>
                                                                     <div class="text-left pl-2">
                                                                         <div class="editable account-number font-weight-bold h5 mb-0"
-                                                                            style="font-size:18px;">1819001292
+                                                                            style="font-size:18px;">5125360294
                                                                         </div>
                                                                         <div class="editable" style="font-size:14.4px;">
-                                                                            DEVI ASLAMATUL KHOIR</div>
+                                                                            MELSI</div>
                                                                     </div>
 
                                                                     <div class="text-left pl-2">
@@ -1089,7 +1089,7 @@
                                     </li>
                                     <li class="satumomen_slide">
                                         <div class="container-mobile "
-                                            style="background-image: url({{ asset('assets/images/invitation/bg-section-42207681725942580.jpg') }}); background-size: cover;">
+                                            style="background-image: url('{{ asset('assets/images/invitation/bg-section-42207681725942580.jpg') }}'); background-size: cover;">
 
                                             <div
                                                 class="watermark h-100 w-100 d-flex flex-column align-items-center justify-content-center">
