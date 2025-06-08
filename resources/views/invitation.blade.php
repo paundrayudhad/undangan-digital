@@ -983,7 +983,7 @@
 
                                                             <button
                                                                 class="btn-rsvp btn btn-primary mx-auto mb-4 animate__animated animate__fadeInUp animate__slow rounded-pill"
-                                                                style="font-size:20px;">Kirim Ucapan RSVP</button>
+                                                                style="font-size:18px;">Kirim Ucapan RSVP</button>
                                                         </div>
                                                     </div>
                                                 </div>
