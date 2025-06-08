@@ -256,7 +256,7 @@
                                         </div>
                                     </li>
                                     <li class="satumomen_slide">
-                                        <div class="container-mobile "
+                                        <div class="container-mobile"
                                             style="background-image: url(https://satumomen.com/themes/forever-journey/bg.webp); ;">
 
                                             <div class="ornament-wrapper">
@@ -293,7 +293,7 @@
                                                         <div class="editable" style="font-size:14.4px;">The wedding of
                                                         </div>
                                                         <div class="editable quotes font-weight-bold"
-                                                            style="font-size:32px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}</div>
+                                                            style="font-size:32px;">{{ $settings->groom_name_short }} &amp; {{ $settings->bride_name_short }}<</div>
 
                                                     </div>
                                                     <div class="mx-auto mb-2 image-editable animate__animated animate__zoomIn animate__slower"
@@ -316,7 +316,7 @@
                                                     </div>
                                                     <div class="image-editable mb-2 mx-auto w-100 h-auto animate__animated animate__zoomIn animate__slower"
                                                         style="margin-top:-35px;"><img
-                                                            src="assets/images/galleries/369331-gallery-acPUt5fgBA.png"
+                                                            src="{{ asset('assets/images/galleries/369331-gallery-acPUt5fgBA.png') }}"
                                                             alt="no-image.jpg" class="h-100 w-100"
                                                             style="object-fit: contain;" /></div>
                                                 </div>
